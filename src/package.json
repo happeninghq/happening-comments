@@ -1,0 +1,19 @@
+{
+  "name": "happening-comments",
+  "version": "0.1.0",
+  "description": "happening-comments",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/happeninghq/happening-comments.git"
+  },
+  "author": "Jonathan Scott <jonathan@jscott.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/happeninghq/happening-comments/issues"
+  },
+  "homepage": "https://github.com/happeninghq/happening-comments#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+}
