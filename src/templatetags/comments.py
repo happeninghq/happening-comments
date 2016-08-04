@@ -2,7 +2,6 @@
 
 from django import template
 from django.template.loader import render_to_string
-from django.template import RequestContext
 from plugins.comments.forms import CommentForm
 from django.core.signing import Signer
 from django.contrib.contenttypes.models import ContentType
@@ -19,7 +18,7 @@ def comments(context, object):
     return render_to_string(
         "comments/_comments.html",
         {"object": object, "comments": comments},
-        context_instance=RequestContext(context['request']))
+        request=context['request'])
 
 
 @register.simple_tag(takes_context=True)
@@ -39,4 +38,4 @@ def comments_form(context, object):
         "comments/_form.html",
         {"form": form,
          "parent": parent},
-        context_instance=RequestContext(context['request']))
+        request=context['request'])
