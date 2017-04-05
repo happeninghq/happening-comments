@@ -8,6 +8,6 @@ class CommentOnGroups(configuration.BooleanField):
     """Can members comment on groups."""
 
     @property
-    def editable(self):
+    def settable(self):
         """Only enable if the groups plugin is enabled."""
         return plugins.plugin_enabled("plugins.groups")
